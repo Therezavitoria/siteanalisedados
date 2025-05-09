@@ -4,237 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AllanHouse Data Solutions</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #1a1a1a;
-      background: #fdfdfd;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: white;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #1a1a1a;
-      font-weight: bold;
-    }
-
-    .btn {
-      background-color: #1e90ff;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 60px 50px;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .logo img {
-      max-width: 200px;
-      height: auto;
-      display: block;
-      margin: 0 auto 15px;
-    }
-
-    .logo h1 {
-      margin: 15px 0 5px;
-      font-size: 28px;
-    }
-
-    .logo h1 span.blue {
-      color: #1e90ff;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: #444;
-    }
-
-    .content {
-      max-width: 400px;
-    }
-
-    .content h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .content p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    /* SERVICES Section */
-    .services {
-      padding: 60px 50px;
-      text-align: center;
-      background-color: #fdfdfd;
-    }
-
-    .services h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-      color: #1a1a1a;
-    }
-
-    .services-container {
-      display: flex;
-      justify-content: center;
-      gap: 80px;
-      flex-wrap: wrap;
-    }
-
-    .service-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 150px;
-    }
-
-    .service-item img {
-      height: 80px;
-      width: auto;
-      object-fit: contain;
-      display: block;
-      margin-bottom: 15px;
-    }
-
-    .service-item p {
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0;
-    }
-
-    .about {
-      padding: 40px 50px;
-      border-top: 2px solid #1e90ff;
-      margin-top: 40px;
-    }
-
-    .about h3 {
-      font-size: 22px;
-      margin: 0;
-      border-bottom: 2px solid #1e90ff;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    .about p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 15px 0;
-    }
-
-    .focus,
-    .goal {
-      margin-top: 30px;
-    }
-
-    .focus-content {
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-      margin-top: 10px;
-    }
-
-    .icon {
-      width: 60px;
-      height: auto;
-    }
-
-    .contact {
-      padding: 60px 50px;
-      background-color: #fdfdfd;
-    }
-
-    .contact h2 {
-      font-size: 32px;
-      color: #1a1a1a;
-      margin-bottom: 30px;
-    }
-
-    .form-container {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    form {
-      flex: 1;
-      min-width: 280px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    label {
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    input,
-    textarea {
-      padding: 10px;
-      border: 2px solid #cbd5e0;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-
-    button {
-      background-color: #1e90ff;
-      color: white;
-      border: none;
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .mail-icon {
-      display: flex;
-      align-items: start;
-      justify-content: center;
-    }
-
-    .mail-icon img {
-      max-width: 80px;
-      height: auto;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
@@ -251,7 +21,7 @@
   <main>
     <section class="hero">
       <div class="logo">
-        <img src="logo.jpg" alt="AllanHouse Logo" />
+        <img src="img/logo.jpg" alt="AllanHouse Logo" />
         <h1><span>ALLAN</span><span class="blue">HOUSE</span></h1>
         <p class="subtitle">— DATA SOLUTIONS —</p>
       </div>
@@ -262,20 +32,19 @@
       </div>
     </section>
 
-    <!-- SERVICES SECTION -->
     <section id="services" class="services">
       <h2>SERVICES</h2>
       <div class="services-container">
         <div class="service-item">
-          <img src="education.jpg" alt="Education" />
+          <img src="img/education.jpg" alt="Education" />
           <p>EDUCATION</p>
         </div>
         <div class="service-item">
-          <img src="health.jpg" alt="Health" />
+          <img src="img/health.jpg" alt="Health" />
           <p>HEALTH</p>
         </div>
         <div class="service-item">
-          <img src="safety.jpg" alt="Public Safety" />
+          <img src="img/safety.jpg" alt="Public Safety" />
           <p>PUBLIC SAFETY</p>
         </div>
       </div>
@@ -290,7 +59,7 @@
       <div class="focus">
         <h4><strong>Our primary focus</strong></h4>
         <div class="focus-content">
-          <img src="school-icon.jpg" alt="School Icon" class="icon" />
+          <img src="img/school-icon.jpg" alt="School Icon" class="icon" />
           <p>
             We specialize in providing comprehensive school management software that empowers municipalities with modern tools to streamline and enhance educational administration.
           </p>
@@ -321,7 +90,7 @@
           <button type="submit">Send</button>
         </form>
         <div class="mail-icon">
-          <img src="mail.jpg" alt="Mail Icon" />
+          <img src="img/mail.jpg" alt="Mail Icon" />
         </div>
       </div>
     </section>
