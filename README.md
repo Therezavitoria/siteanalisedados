@@ -37,3 +37,25 @@ allanhouse/
 │   └── mail.jpg
 └── README.md
 
+css
+  ├── global.css
+  ├── index.css
+  ├── about.css
+  ├── services.css
+  └── contact.css
+
+seu-projeto
+│
+├── index.html
+├── about.html
+├── services.html
+├── contact.html
+│
+└── css/
+    ├── global.css
+    ├── index.css
+    ├── about.css
+    ├── services.css
+    └── contact.css
+
+

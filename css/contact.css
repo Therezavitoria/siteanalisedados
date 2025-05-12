@@ -1,0 +1,74 @@
+.contact {
+  padding: 60px 50px;
+  background-color: #fdfdfd;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #cbd5e0;
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mail-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mail-icon img {
+  max-width: 80px;
+}
+
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+}

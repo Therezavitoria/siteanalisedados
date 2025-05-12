@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #1e90ff; /* Azul */
+  --primary-dark: #1565c0; /* Azul mais escuro */
+  --text-color: #1a1a1a;
+  --background-light: #f9f9f9;
+  --font-main: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background: #fdfdfd;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+/* Botão Get In Touch no canto superior direito */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right button {
+  background-color: var(--primary-color); /* Cor azul */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Cor do botão Get In Touch ao passar o mouse */
+.nav-right button:hover {
+  background-color: var(--primary-dark); /* Azul mais escuro ao passar o mouse */
+}
+
+/* BOTÕES GLOBAIS */
+.btn, .btn-primary {
+  background-color: var(--primary-color); /* Azul */
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 12px 20px;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: var(--primary-dark); /* Azul mais escuro ao passar o mouse */
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .navbar-custom {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-custom {
+    padding: 15px 10px;
+  }
+}

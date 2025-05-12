@@ -1,0 +1,74 @@
+/* About Section Styling */
+ .about {
+  padding: 40px 50px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.about h3 {
+  font-size: 26px; /* Um pouco maior para destaque */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 15px 0;
+  color: #555; /* Melhor contraste para a legibilidade */
+}
+
+.focus,
+.goal {
+  margin-top: 30px;
+}
+
+.focus h4,
+.goal h4 {
+  font-size: 22px;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.focus-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center; /* Centraliza os itens na tela */
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+}
+
+.focus-content p {
+  max-width: 600px;
+  text-align: justify;
+  color: #333; /* Um tom mais escuro para maior legibilidade */
+  margin-left: 10px; /* Pequeno ajuste para dar espaço entre o ícone e o texto */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px;
+  }
+
+  .about h3 {
+    font-size: 22px; /* Ajusta o tamanho do título em telas menores */
+  }
+
+  .focus-content {
+    flex-direction: column; /* Coloca os ícones e texto um abaixo do outro em telas menores */
+    align-items: center;
+  }
+
+  .icon {
+    width: 50px; /* Diminui o tamanho do ícone em telas pequenas */
+  }
+}

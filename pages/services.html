@@ -4,51 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services - AllanHouse</title>
-  <link rel="stylesheet" href="../css/style.css" />
 
-  <!-- Bootstrap CSS (necessário para o modal funcionar) -->
+  <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/services.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar-custom">
-      <div class="nav-left">
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <!-- Botão no canto superior direito -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
-          Get In Touch
-        </button>
-      </div>
-    </nav>
-  </header>
 
+  <!-- Navbar -->
+  <nav class="navbar-custom">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+    <!-- Botão Get In Touch atualizado -->
+    <button type="button" class="btn btn-primary btn-nav" data-toggle="modal" data-target="#contactModal">
+      Get In Touch
+    </button>
+  </nav>
+
+  <!-- Services Section -->
   <main>
     <section class="services">
       <h2>SERVICES</h2>
       <div class="services-container">
         <div class="service-item">
-          <img src="../img/education.jpg" alt="Education" />
+          <img src="../img/education.jpg" alt="Education Sector" />
           <p>EDUCATION</p>
         </div>
         <div class="service-item">
-          <img src="../img/health.jpg" alt="Health" />
+          <img src="../img/health.jpg" alt="Health Sector" />
           <p>HEALTH</p>
         </div>
         <div class="service-item">
-          <img src="../img/safety.jpg" alt="Public Safety" />
+          <img src="../img/safety.jpg" alt="Public Safety Sector" />
           <p>PUBLIC SAFETY</p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Modal de Contato (igual da Home) -->
+  <!-- Contact Modal -->
   <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-  <!-- Bootstrap JS + dependências -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -4,29 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - AllanHouse</title>
-  <link rel="stylesheet" href="../css/style.css" />
 
-  <style>
-    /* Remover as linhas acima e abaixo do título */
-    h3 {
-      border-top: none;
-      border-bottom: none;
-      text-decoration: none;
-    }
-  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/about.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
-      <a href="contact.html" class="btn">Get In Touch</a>
-    </nav>
-  </header>
 
+  <!-- Navbar -->
+  <nav class="navbar-custom">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+    <!-- Botão Get In Touch atualizado -->
+    <button type="button" class="btn btn-primary btn-nav" data-toggle="modal" data-target="#contactModal">
+      Get In Touch
+    </button>
+  </nav>
+
+  <!-- Main Content -->
   <main>
     <section class="about">
       <h3>ABOUT US</h3>
@@ -34,6 +35,7 @@
         AllanHouse Data Solutions is dedicated to improving public services through the integration of advanced data technologies.
       </p>
 
+      <!-- Our Focus Section -->
       <div class="focus">
         <h4><strong>Our primary focus</strong></h4>
         <div class="focus-content">
@@ -44,6 +46,7 @@
         </div>
       </div>
 
+      <!-- Our Goal Section -->
       <div class="goal">
         <h4><strong>Our goal</strong></h4>
         <p>
@@ -52,5 +55,42 @@
       </div>
     </section>
   </main>
+
+  <!-- Contact Modal (same as Home page) -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Get In Touch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
