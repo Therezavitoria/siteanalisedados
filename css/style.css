@@ -1,229 +1,326 @@
+/* ========= ROOT / VARIÁVEIS ========= */
+:root {
+  --primary-color: #1e90ff;
+  --primary-dark: #1565c0;
+  --text-color: #1a1a1a;
+  --background-light: #f9f9f9;
+  --font-main: Arial, sans-serif;
+}
+
+/* ========= RESET ========= */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background: #fdfdfd;
+}
+
+/* ========= NAVBAR ========= */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ========= BOTÕES ========= */
+.btn, .btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 12px 20px;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ========= HERO SECTION ========= */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 80px;
+  background-color: var(--background-light);
+}
+
+.hero .logo {
+  flex: 1;
+  max-width: 450px;
+  text-align: left;
+}
+
+.hero .logo img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.hero .logo h1 {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 10px 0 5px;
+}
+
+.hero .logo h1 span.blue {
+  color: var(--primary-color);
+}
+
+.hero .content {
+  flex: 1;
+  text-align: left;
+}
+
+.hero .content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.hero .content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* ========= SERVICES ========= */
+.services {
+  padding: 60px 50px;
+  text-align: center;
+  background-color: #fdfdfd;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.service-item {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item img {
+  height: 80px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.service-item p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ========= ABOUT ========= */
+.about {
+  padding: 40px 50px;
+  margin-top: 40px;
+}
+
+.about h3 {
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.focus,
+.goal {
+  margin-top: 30px;
+}
+
+.focus-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 60px;
+}
+
+/* ========= CONTATO ========= */
+.contact {
+  padding: 60px 50px;
+  background-color: #fdfdfd;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #cbd5e0;
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Icone de email */
+.mail-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mail-icon img {
+  max-width: 80px;
+}
+
+/* ========= RESPONSIVO ========= */
+@media (max-width: 1024px) {
+  .navbar-custom {
+    padding: 20px 30px;
   }
-  
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #1a1a1a;
-    background: #fdfdfd;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: white;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: bold;
-  }
-  
-  .btn {
-    background-color: #1e90ff;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+
   .hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 60px 50px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 20px;
   }
-  
-  .logo {
-    text-align: center;
-    margin-bottom: 30px;
+
+  .services-container {
+    gap: 50px;
   }
-  
-  .logo img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    flex-direction: column;
+    padding: 15px 20px;
   }
-  
-  .logo h1 {
-    margin: 15px 0 5px;
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .hero .content h2 {
+    font-size: 32px;
+  }
+
+  .service-item {
+    width: 200px;
+  }
+
+  .contact h2 {
     font-size: 28px;
   }
-  
-  .logo h1 span.blue {
-    color: #1e90ff;
+}
+
+@media (max-width: 480px) {
+  .navbar-custom {
+    padding: 15px 10px;
   }
-  
-  .subtitle {
-    font-size: 14px;
-    color: #444;
+
+  .hero {
+    padding: 20px 10px;
   }
-  
-  .content {
-    max-width: 400px;
+
+  .logo img {
+    max-width: 200px;
   }
-  
+
   .content h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 28px;
   }
-  
-  .content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .services {
-    padding: 60px 50px;
-    text-align: center;
-    background-color: #fdfdfd;
-  }
-  
-  .services h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #1a1a1a;
-  }
-  
-  .services-container {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-  }
-  
+
   .service-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 150px;
   }
-  
-  .service-item img {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    margin-bottom: 15px;
-  }
-  
-  .service-item p {
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0;
-  }
-  
-  .about {
-    padding: 40px 50px;
-    border-top: 2px solid #1e90ff;
-    margin-top: 40px;
-  }
-  
-  .about h3 {
-    font-size: 22px;
-    margin: 0;
-    border-bottom: 2px solid #1e90ff;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-  
-  .about p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 15px 0;
-  }
-  
-  .focus,
-  .goal {
-    margin-top: 30px;
-  }
-  
-  .focus-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .icon {
-    width: 60px;
-    height: auto;
-  }
-  
+
   .contact {
-    padding: 60px 50px;
-    background-color: #fdfdfd;
+    padding: 40px 20px;
   }
-  
+
   .contact h2 {
-    font-size: 32px;
-    color: #1a1a1a;
-    margin-bottom: 30px;
+    font-size: 24px;
   }
-  
-  .form-container {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  form {
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  input,
-  textarea {
-    padding: 10px;
-    border: 2px solid #cbd5e0;
-    border-radius: 8px;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #1e90ff;
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .mail-icon {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
-  
-  .mail-icon img {
-    max-width: 80px;
-    height: auto;
-    margin-top: 30px;
-  }
-  
+}
