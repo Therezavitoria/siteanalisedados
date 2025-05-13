@@ -1,14 +1,16 @@
 /* About Section Styling */
- .about {
+.about {
   padding: 40px 50px;
   margin-top: 40px;
   font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin-left: 0; /* Sem margem lateral */
+  text-align: left;
 }
 
 .about h3 {
-  font-size: 26px; /* Um pouco maior para destaque */
+  font-size: 26px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -16,7 +18,7 @@
   font-size: 16px;
   line-height: 1.6;
   margin: 15px 0;
-  color: #555; /* Melhor contraste para a legibilidade */
+  color: #555;
 }
 
 .focus,
@@ -29,7 +31,6 @@
   font-size: 22px;
   color: #007bff;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 15px;
 }
 
@@ -38,7 +39,6 @@
   align-items: flex-start;
   gap: 15px;
   margin-top: 10px;
-  justify-content: center; /* Centraliza os itens na tela */
 }
 
 .icon {
@@ -49,26 +49,28 @@
 .focus-content p {
   max-width: 600px;
   text-align: justify;
-  color: #333; /* Um tom mais escuro para maior legibilidade */
-  margin-left: 10px; /* Pequeno ajuste para dar espaço entre o ícone e o texto */
+  color: #333;
+  margin-left: 10px;
 }
 
-/* Ajustes de responsividade */
+/* Remove centralização global (se existir) */
+main, body {
+  display: block !important;
+  text-align: left !important;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
   .about {
     padding: 20px;
   }
 
-  .about h3 {
-    font-size: 22px; /* Ajusta o tamanho do título em telas menores */
-  }
-
   .focus-content {
-    flex-direction: column; /* Coloca os ícones e texto um abaixo do outro em telas menores */
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .icon {
-    width: 50px; /* Diminui o tamanho do ícone em telas pequenas */
+    width: 50px;
   }
 }
